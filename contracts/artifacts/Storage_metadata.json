@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "createSimpleStorageContract",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_storageIndex",
-						"type": "uint256"
-					}
-				],
-				"name": "getStoredValue",
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -35,43 +22,35 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "num",
 						"type": "uint256"
 					}
 				],
-				"name": "storageArray",
-				"outputs": [
-					{
-						"internalType": "contract Storage",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_storageIndex",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "number",
-						"type": "uint256"
-					}
-				],
-				"name": "storeNumber",
+				"name": "store",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"retrieve()": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				},
+				"store(uint256)": {
+					"details": "Store value in variable",
+					"params": {
+						"num": "value to store"
+					}
+				}
+			},
+			"title": "Storage",
 			"version": 1
 		},
 		"userdoc": {
@@ -82,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/storageFactory.sol": "StorageFactory"
+			"contracts/1_Storage.sol": "Storage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,14 +81,6 @@
 			"urls": [
 				"bzz-raw://aac95d61b7ce356e2da8d93eb66abfabbeadebb4f44d3d78fd14414e7ac918ba",
 				"dweb:/ipfs/QmZ6otiNvDfrWzEiQJBAdWUurwEvsemrbBZgD9hj6qSki1"
-			]
-		},
-		"contracts/storageFactory.sol": {
-			"keccak256": "0x3e6bc0367ecedf14cf2cc7a27c753122af14270023afe28973b708bc1939d0fd",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://62a3f5333661d43436dff7063675071f74b83f92dcd08fb6389a56b83fda43d5",
-				"dweb:/ipfs/QmNiFjSB3y2C1v6jDGNUhvCWXfq3y5dSJn1AakFZnVx7H2"
 			]
 		}
 	},
