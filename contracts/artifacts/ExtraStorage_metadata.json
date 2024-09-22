@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_storageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"retrieve()": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/extraStorage.sol": "ExtraStorage"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/1_Storage.sol": {
+			"keccak256": "0x212a5357ea841acef4037983b4549d860029fa502a7b7faec89c199bf666186e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fe23549d5a5eaad7343602ed68cbd900ed5590a9d090db7334799e42fc7c00a2",
+				"dweb:/ipfs/QmXzkLHkvDFS3pVAnK8dAknajaBqJWjNzDPorWuNgQLgwJ"
+			]
+		},
+		"contracts/extraStorage.sol": {
+			"keccak256": "0xa147fb2bc224ff5523f2be3fb834d00ad061d6663458b296f3755c32219cf84c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://af2ca6371ac2f4a23d5d6bbdde4b64af81c6ed78ffaa492c1c1521f8419dcc3c",
+				"dweb:/ipfs/QmTZnCEzY9JPHbgtCoSsPjHyQyJM7HLWfSACZKzgyYpetX"
+			]
+		}
+	},
+	"version": 1
+}

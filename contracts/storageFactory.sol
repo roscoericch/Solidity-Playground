@@ -5,7 +5,6 @@ pragma solidity >=0.8.2 <0.9.0;
 /**
  * @title StorageFactory
  * @dev Create Store Contract & store,retrieve value in contracts
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
  */
 
 import "contracts/1_Storage.sol";
